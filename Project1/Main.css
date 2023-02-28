@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Shantell Sans', cursive;
+}
+/*https://www.canva.com/colors/color-palettes/peach-kiss/*/
+body{
+    background-color:#FACB80;
+    filter: blur(0px);
+}
+/*CSS code for the header banner*/
+.header{
+    width: 100%;
+    height: 40vh;
+    background-image: url(Images/Cherry_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+.header img{
+    max-width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header p{
+    position: absolute;
+    float: right;
+    margin-top: 4vh;
+    margin-left: 90vw;
+    color:white;
+    text-decoration: none;
+    font-size: .5em;
+}
+.header p a{
+    color:white;
+    text-decoration: none;
+}
+/*CSS code for the header navigation bar*/
+.head_nav nav{
+    background-color: #F69770;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.head_nav a.current{
+    color:#B52B40;
+}
+.head_nav nav ul{
+    list-style-type: none;
+    margin-left: 100px;
+}
+.head_nav nav li{
+    display: inline;
+}
+.head_nav nav li a{
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    margin: 1em;
+    padding: 1em;
+    color: black;
+    font-size: 1.3em;
+}
+.head_nav nav li:nth-child(2){
+    margin-right: 5vw;
+}
+.head_nav nav li a:hover{
+    color: whitesmoke;
+}
+.nav_logo img{
+    max-width: 135px;
+    float: none;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/*CSS code for the expanding cards*/
+.expand_cards{
+    background-color: #FBD8B0;
+    margin-top: 50px;
+    margin-left: 4.5vw;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+    height: 75vh;
+    overflow: hidden;
+    border-radius: 50px;
+}
+.panel{
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 72vh;
+    cursor: pointer;
+    flex: .5;
+    margin: 10px;
+    position: relative;
+    border-radius: 50px;
+    transition: flex 0.7s ease-in;
+}
+.panel.active{
+    flex: 5;
+}
+/*CSS code for the split segment*/
+.split_seg{
+    height: 75vh;
+    background-color: #FBD8B0;
+    margin:0 5vw;
+    border-radius: 50px;
+}
+.split1{
+    position: absolute;
+    background-color: #B52B40;
+    text-align: center;
+    height: 40vh;
+    width: 30vw;
+    margin: 13vh 7vw 12vh;
+    border-radius: 25px;
+}
+.split1_text h2{
+    padding-top:20%;
+    text-align: center;
+    font-size: 2em;
+}
+.split1_text hr{
+    margin: 2vh 4vw;
+    border-color:black;
+}
+.split2{
+    position: absolute;
+    background-image: url("images/Main_img1.jpg");
+    margin-top: 2vh;
+    margin-left: 45vw;
+    width: 35vw;
+    height: 70vh;
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/*CSS code for the end details*/
+.end_details{
+    margin-top: 10vh;
+    margin-bottom: 1vh;
+}
+.end_details p{
+    margin-top: 1vh;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 11px;
+    text-align: center;
+}
+.end_details img{
+    max-width: 150px;
+    display: block;
+    margin: auto;
+    margin-bottom: 0;
+}
+.logo_links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #FBD8B0;
+    width: 120px;
+    margin:auto;
+    padding-top: 5px;
+    border-radius: 50px;
+}
+.logo_links ul{
+    list-style-type: none;
+    display:flex;
+}
+.logo_links ul li{
+    position:relative;
+    display: block;
+    height: 40px;
+    width:50px
+}
+.logo_links ul li img{
+    max-width: 4vh;
+}

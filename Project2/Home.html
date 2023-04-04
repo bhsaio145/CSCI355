@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="Home.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+        <title>APU Homepage</title>
+    </head>
+    <body>
+        <nav>
+            <button class="open">=</button>
+            <div class="nav one">
+                <div class="nav two">
+                    <div class="nav three">
+                        <button class="close">X</button>
+                        <p class="Logo">APU</p>
+                        <ul class="list">
+                            <li><a href="Home.html" class="current">Home</a></li>
+                            <li><a href="Products_Landing.html">Products</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="banner">
+            <h1 class="Logo">APU</h1>
+        </div>
+        <div class="infobox">
+            <p>Building high-performance computing and graphics technologies that are helping solve some of the world's toughest challenges by enabling its researchers, creators, inventors, and explorers.
+                Letting you get top of the line well known processing units from AMD, Intel, NVIDIA, and more. Alongside our own custom built processing units.
+                <br>Powering the products and services that help solve the world's most important challenges. Our technologies advance the future of the data center, embedded, gaming and PC markets.
+            </p>
+        </div>
+        <div class="infobox">
+            <img class="img-right" src="Images/Quality.png" alt="Quality.png">
+            <p class="img-right">
+                We are dedicated to delivering high quality products to enable their success. By enabling a collection of standards, processes and company-wide systems, we push the boundaries of technological innovation while maintaining world class levels of quality.
+                <br> Quality Policy is a declaration of our commitment to uphold our products to the highest standards. Our goal is to deliver world class products to our customers facilitated by collaborative and responsive partnerships.
+            </p>
+        </div>
+        <div class="infobox">
+            <p>Partnered with the Brand you know and trust</p>
+            <ul>
+                <li><img class="brand_logo" src="Images/logo_INTEL.png" alt="Intel"></li>
+                <li><img class="brand_logo" src="Images/logo_AMD.png" alt="AMD"></li>
+                <li><img class="brand_logo" src="Images/logo_NVIDIA.png" alt="NVIDIA"></li>
+            </ul>
+        </div>
+        <div class="infobox email_form">
+            <p>Subscribe to out email system and get updates to deals and promotions in the future!</p>
+            <form action="/email" method="POST">
+                <p>
+                    <input class="text-container" type="text" name="email" id="email" required>
+                    <label for="email" class="text-label">Email</label>
+                </p>
+                <input type="submit" class="btn">
+            </form>
+        </div>
+        <script src="Home.js"></script>
+    </body>
+</html>

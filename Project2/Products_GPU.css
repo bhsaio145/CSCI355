@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #113768;
+}
+/* CSS code for Animated Navigation*/
+nav{
+    background-color: #0598ce;
+    padding: 20px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px black;
+    transition: width 0.6s linear;
+    margin-top: 2vh;
+    margin-left: 2vw;
+    border-radius: 5px;
+    position: fixed;
+}
+nav.active{
+    width: 225px;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 0;
+    transition: width 0.6s linear;
+}
+nav.active ul{
+    width: 100%;
+}
+nav ul li{
+    transform: rotateY(0deg);
+    opacity: 0;
+    transition: transform 0.6s linear, opacity 0.6s linear;
+}
+nav.active ul li{
+    opacity: 1;
+    transform: rotateY(360deg)
+}
+nav ul a{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+nav ul a.current{
+    color:#113768;
+}
+.icon{
+    background-color: #0598ce;
+    border: 0;
+    cursor: pointer;
+    padding: 0;
+    position: relative;
+    height: 30px;
+    width: 30px;
+}
+.icon:focus{
+    outline: 0;
+}
+.icon .line{
+    background-color: white;
+    height: 2px;
+    width: 20px;
+    position: absolute;
+    top:10px;
+    left: 5px;
+    transition: transform 0.6s linear;
+}
+.icon .line2{
+    top: auto;
+    bottom: 10px;
+}
+nav.active .icon .line1{
+    transform: rotate(-765deg) translateY(5.5px);
+}
+nav.active .icon .line2{
+    transform: rotate(765deg) translateY(-5.5px);
+}
+
+/* CSS code for banner */
+.banner{
+    background-image: url(Images/Split_GPU.png);
+    width: 100%;
+    height: 30vh;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+.banner h1{
+    text-align: center;
+    position: absolute;
+    color:white;
+    width: 100%;
+    background: none;
+    font-family: 'Audiowide';
+    font-size: 8vh;
+    margin-top: 10vh;
+}
+/* CSS code for product gallery*/
+.gallery{
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 5vh;
+}
+.gallery-product{
+    float:left;
+    height: 25vw;
+    width: 25vw;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: middle;
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color:white;
+}
+.gallery-product img{
+    height: 25vw;
+    width: 25vw;
+    display: inline-block;
+    vertical-align: middle;
+}
+.gallery-product.hover img{
+    visibility: hidden;
+}
